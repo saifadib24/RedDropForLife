@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Members RedDropForLife</title>
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container text-center">
+    <div>
+        <h1>All members</h1>
+    </div>
+    <div>
+        <form th:action="@{/search_donor}">
+            Bloodd Group: <input type="text" name="bldgrp" id="bldgrp" size="50" th:value="${bldgrp}" />
+            &nbsp;
+            <input type="submit" value="Search" />
+        </form>
+    </div>
+    <div>
+        <table class="table table-striped table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>MemberId</th>
+                    <th>First Name</th>
+                    <th>Blood Group</th>
+                    <th>Address</th>
+                    <th>Phone Number</th>
+                    <th>Secondary Phone Number</th>
+                    <th>Last Date of Donation</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="member: ${listMembers}">
+                    <td th:text="${member.id}">MemberId</td>
+                    <td th:text="${member.firstname}">First Name</td>
+                    <td th:text="${member.bloodGrp}">Blood Group</td>
+                    <td th:text="${member.currentAddress}">Address</td>
+                    <td th:text="${member.phone}">Phone Number</td>
+                    <td th:text="${member.phone2}">econdary Phone Number</td>
+                    <td th:text="${member.lastDateofDonation}">Last Date of Donation</td>
+                    <td th:text="${member.email}">Email</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

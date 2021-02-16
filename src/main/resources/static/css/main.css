@@ -1,0 +1,328 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+#nav-bar
+{
+    position: sticky;
+    top: 0px; left: 0px;
+    right: 0px;
+
+    z-index: 30;
+    height: 5px;
+}
+.navbar-brand img
+{
+    height: 47px;
+    padding-left: 30px;
+}
+.navbar-nav li
+{
+    padding: 0 10px;
+}
+.navbar-nav li a
+{
+    float: right;
+    text-align: left;
+}
+#nav-bar ul li a:hover
+{
+    color: brown!important;
+
+}
+.navbar
+{
+    background: grey;
+}
+.navbar-toggler
+{
+    border: none!important;
+}
+.nav-link
+{
+    color: chocolate;
+    font-family: Papyrus;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+#slider
+{
+    width: 100%;
+    height: 40%;
+}
+.carousel-caption
+{
+    top:50%;
+    transform: translateY(-50%);
+    bottom: initial!important;
+}
+.carousel-caption h5
+{
+    color: black;
+    font-family: Papyrus;
+    font-weight: bolder;
+
+
+}
+.carousel-caption h2
+{
+    color: brown;
+    font-family: Papyrus;
+    font-weight: bolder;
+   padding: 10px;
+
+}
+.carousel-item img{
+    width: 100%;
+    height: 40%;
+
+}
+/*---------ABOUT-------------*/
+#about
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: brown;
+
+
+}
+.about-img
+{
+    position: relative;
+    margin-bottom: 15px;
+}
+.about-img img{
+    width: 100%;
+    height: 100%;
+}
+.about-content {
+    padding-top: 20px;
+}
+#register h1
+{
+    text-align: center;
+    color: maroon!important;
+    padding-bottom: 10px;
+}
+#register h1::after
+{
+    content: '';
+    background: cadetblue;
+    display: block;
+    height: 3px;
+    width: 70px;
+    margin: 20px auto 5px;
+}
+
+#register
+{
+    background: rosybrown;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: chocolate;
+}
+
+                                  /*---------CONTACT-------------*/
+#contact h3
+{
+    text-align: center;
+    color: maroon!important;
+    padding-bottom: 10px;
+}
+#contact h3::after
+{
+    content: '';
+    background: cadetblue;
+    display: block;
+    height: 7px;
+    width: 120px;
+    margin: 20px auto 5px;
+}
+
+#contact
+{
+    background:rosybrown;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: chocolate;
+}
+
+*[role="form"] {
+    max-width: 530px;
+    padding: 25px;
+    margin: 0 auto;
+    border-radius: 0.3em;
+    background-color: #f2f2f2;
+}
+
+*[role="form"] h2 {
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #000000;
+    margin-top: 5%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+.dropdown {list-style: none; background: rosybrown; padding: 10px; display: inline-block;}
+
+
+.contact-form
+{
+   padding: 20px;
+}
+::placeholder
+{
+    color: burlywood!important;
+}
+.follow
+{
+    background: whitesmoke;
+    padding: 10px;
+    margin: 16px;
+}
+.contact-info .fa
+{
+    margin: 10px;
+    color: darkblue;
+    font-weight: bold ;
+}
+
+.shadow-textarea textarea.form-control::placeholder {
+    font-weight: 300;
+}
+.shadow-textarea textarea.form-control {
+    padding-left: 0.8rem;
+}
+
+                                       /*---------Footer-------------*/
+#footer
+{
+    color: indigo;
+    background: gray;
+    padding: 45px;
+}
+
+.btn btn-warning{
+    width: 150px;
+    padding: 10px 0;
+    outline: none!important;
+    border: 0;
+    border-radius: 2px;
+    position: absolute;
+    background: lavenderblush;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50% 0);
+
+}
+#newsletter
+{
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Papyrus;
+
+}
+#newsletter.container{
+    background: url(bg.jpg) no-repeat center;
+    background-size: yellow;
+    padding: 100px 40px;
+    text-align: center;
+    color: lavender;
+}
+
+.email-box{
+    height: 40px;
+    justify-content: center;
+    display: flex;
+}
+.email-box i{
+    background: #2f3542;
+    width: 40px;
+    line-height: 40px;
+}
+.tbox,.btn{
+    border: brown;
+    outline: darkgoldenrod;
+}
+.tbox{
+    width: 0px;
+    transition: 0.6s;
+}
+.email-box:hover > .tbox,.tbox:focus{
+    width: 260px;
+    padding: 0 10px;
+}
+.btns{ display: inline-block;
+min-width: 170px;
+height: 50px;
+color: lightgreen;
+border: none;
+border-radius: 0;
+padding: 0 40px;
+text-transform: uppercase;
+font-size: 12px;
+line-height: 50px;
+background-color: #0315ff;
+letter-spacing: 1.5px;
+font-weight: 600; }
+.modal-body p {
+    margin: 0;
+    text-indent: 3ch;
+}
+
+.modal-body p.pilcrow {
+    text-indent: 0;
+    display: inline;
+}
+.modal-bodyp.pilcrow + p.pilcrow::before {
+    content: " ¶ ";
+}
+
+
+
+
+/*search box */
+.search-sec{
+    padding: 5rem;
+}
+
+.search-slt{
+	position:center;
+    display: block;
+    width: auto;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #55595c;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+}
+.wrn-btn{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+}
+@media (min-width: 992px){
+    .search-sec{
+        position: center;
+        top: -114px;
+        background: rgba(26, 70, 104, 0.51);
+    }
+}
+
+@media (max-width: 992px){
+    .search-sec{
+        background: #1A4668;
+    }
+}
